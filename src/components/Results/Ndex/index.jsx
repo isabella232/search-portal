@@ -7,7 +7,6 @@ import NetworkView from './NetworkView'
 import NetworkList from './NetworkList'
 
 import { camelCaseToTitleCase } from '../TableBrowser/camel-case-util'
-
 import ListItemIcon from '@material-ui/core/ListItemIcon'
 import Typography from '@material-ui/core/Typography'
 import { ListItem } from '@material-ui/core'
@@ -248,9 +247,9 @@ const Ndex = props => {
         <table style={tableStyle}>
           <tbody>
             <tr padding="0">
-              {/* <td align="center" valign="middle" rowSpan="2" padding="0">
+              <td align="center" valign="middle" rowSpan="2" padding="0">
                 {icon}
-              </td> */}
+              </td>
               {/* <td align="left" width="50px" padding="0"> */}
                 {/* {<Typography variant='caption' color='textSecondary'>Query Genes</Typography>} */}
                 {/* {newline} */}
