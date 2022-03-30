@@ -3,7 +3,7 @@ import CytoscapeComponent from 'react-cytoscapejs';
 import { CxToJs, CyNetworkUtils } from '@js4cytoscape/cx2js';
 import Cytoscape from 'cytoscape';
 import CyCanvas from 'cytoscape-canvas';
-import { CxToCyCanvas } from '@js4cytoscape/cyannotation-cx2js';
+import { CxToCyCanvas } from 'cyannotation-cx2js';
 import Warning from './Warning';
 import { CONCENTRIC_LAYOUT, COSE_LAYOUT } from './LayoutSettings';
 import { cloneDeep } from 'lodash';
@@ -343,7 +343,7 @@ const CytoscapeViewer = (props) => {
 
     if (highlights) {
       cyInstance.elements().addClass('faded');
-      const query = cyInstance.filter('node[querynode = "true"]');
+      const query = cyInstance.nodes().filter('node[?querynode]');
       query.addClass('highlight');
     } else {
       cyInstance
